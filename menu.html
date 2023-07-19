@@ -17,7 +17,11 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="assets/js/filter.js"></script>
+
+    <script>
+        // Отримуємо інформацію про лайкнуті товари з local storage
+        var likedItems = JSON.parse(localStorage.getItem('likedItems')) || {};
+    </script>
 
 </head>
 
@@ -107,10 +111,6 @@
                 <div class="trainer-item">
                     <div class="image-thumb">
                         <img src="assets/images/1.jpg" alt="">
-                        <div class="like-icon">
-                            <i class="far fa-heart"></i>
-                            <i class="fas fa-heart"></i>
-                        </div>
                     </div>
                     <div class="down-content">
                             <span>
@@ -123,12 +123,13 @@
 
                         <ul class="social-icons">
                             <li><a href="contact.html">Замовити</a></li>
+                            <li><a href="javascript:void(0);" class="like-icon"><i class="far fa-heart"></i><i class="fas fa-heart"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="trainer-item">
+                <div class="trainer-item" data-item="unique_id_1">
                     <div class="image-thumb">
                         <img src="assets/images/1.jpg" alt="">
                         <div class="like-icon">
@@ -147,6 +148,7 @@
 
                         <ul class="social-icons">
                             <li><a href="contact.html">Замовити</a></li>
+                            <li><a href="javascript:void(0);" class="like-icon"><i class="far fa-heart"></i><i class="fas fa-heart"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -171,6 +173,7 @@
 
                         <ul class="social-icons">
                             <li><a href="contact.html">Замовити</a></li>
+                            <li><a href="javascript:void(0);" class="like-icon"><i class="far fa-heart"></i><i class="fas fa-heart"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -196,6 +199,7 @@
 
                         <ul class="social-icons">
                             <li><a href="contact.html">Замовити</a></li>
+                            <li><a href="javascript:void(0);" class="like-icon"><i class="far fa-heart"></i><i class="fas fa-heart"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -220,6 +224,7 @@
 
                         <ul class="social-icons">
                             <li><a href="contact.html">Замовити</a></li>
+                            <li><a href="javascript:void(0);" class="like-icon"><i class="far fa-heart"></i><i class="fas fa-heart"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -239,6 +244,7 @@
                         <p>..........</p>
                         <ul class="social-icons">
                             <li><a href="contact.html">Замовити</a></li>
+                            <li><a href="javascript:void(0);" class="like-icon"><i class="far fa-heart"></i><i class="fas fa-heart"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -246,6 +252,7 @@
         </div>
     </div>
 
+    <!-- Менюшка для відображення лайкнутих товарів -->
     <div class="right-menu liked-items-wrapper">
         <h3>Вподобані товари:</h3>
         <ul id="liked-items-list">
@@ -312,6 +319,7 @@
 <script src="assets/js/custom.js"></script>
 <script src="assets/js/filter.js"></script>
 <script src="assets/js/like.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </body>
 </html>

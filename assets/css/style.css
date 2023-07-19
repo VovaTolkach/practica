@@ -1272,7 +1272,6 @@ a:hover {
   color: #f9735b;
 }
 
-/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
 /* Стилі для іконки лайка */
 .like-icon {
   position: absolute;
@@ -1318,8 +1317,8 @@ a:hover {
 .right-menu h3 {
   padding: 15px;
   margin: 0;
-  background-color: #e0e0e0;
-  border-bottom: 1px solid #ccc;
+  background-color: orange;
+  border-bottom: 1px solid #262016;
   border-radius: 5px 5px 0 0;
 }
 
@@ -1332,7 +1331,7 @@ a:hover {
 
 #liked-items-list li {
   padding: 10px 15px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #262016;
   font-size: 14px;
 }
 
@@ -1342,6 +1341,6 @@ a:hover {
 
 /* Ефект при наведенні на пункт списку */
 #liked-items-list li:hover {
-  background-color: #f1f1f1;
+  background-color: #a1722b;
   cursor: pointer;
 }
