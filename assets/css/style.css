@@ -1344,3 +1344,30 @@ a:hover {
   background-color: #a1722b;
   cursor: pointer;
 }
+
+/* Стилі для закріплення посилання */
+.col-lg-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  list-style: none;
+  margin-left: 10px;
+}
+
+.social-icons li a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
