@@ -1,26 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
     const filterBtn = document.querySelector('.header-filter'),
-        dropdownMenu = document.querySelector('.filtered-menu'),
-        reworkMenu = document.querySelector('.reworkedMenu'),
+        filterMenu = document.querySelector('#filterMenu'), // Використовуємо id
+        reworkMenu = document.querySelector('#moreMenu'), // Використовуємо id
         moreBtn = document.querySelector('.reworkThis');
-    let timer;
-    function showDropdown(btn, menu) {
-        btn.addEventListener('mouseenter', (e) => {
-            clearTimeout(timer);
+    let filterTimer, moreTimer;
+
+    function showDropdown(btn, menu, timerRef) {
+        btn.addEventListener('mouseenter', () => {
+            clearTimeout(timerRef);
             menu.style.display = 'block';
         });
-    }
 
-    function hideDropdown(menu) {
-        menu.addEventListener('mouseleave', (e) => {
-            timer = setTimeout(() => {
+        btn.addEventListener('mouseleave', () => {
+            timerRef = setTimeout(() => {
+                const isCursorOnMenu = menu.matches(':hover');
+                if (!isCursorOnMenu) {
+                    menu.style.display = 'none';
+                }
+            }, 200);
+        });
+
+        menu.addEventListener('mouseenter', () => {
+            clearTimeout(timerRef);
+        });
+
+        menu.addEventListener('mouseleave', () => {
+            timerRef = setTimeout(() => {
                 menu.style.display = 'none';
             }, 200);
         });
     }
 
-    showDropdown(filterBtn, dropdownMenu);
-    hideDropdown(dropdownMenu);
-    showDropdown(moreBtn, reworkMenu);
-    hideDropdown(reworkMenu);
+    // Обробка подій курсора для меню
+    showDropdown(filterBtn, filterMenu, filterTimer);
+    showDropdown(moreBtn, reworkMenu, moreTimer);
 });
