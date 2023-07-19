@@ -1,3 +1,5 @@
+"use strict";
+
 document.addEventListener('DOMContentLoaded', () => {
     const filterBtn = document.querySelector('.header-filter'),
         filterMenu = document.querySelector('#filterMenu'), // Використовуємо id
