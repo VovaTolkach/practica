@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,74 +16,88 @@
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    </head>
-    
-    <body>
-    
-    <!-- ***** Preloader Start ***** -->
-    <div id="js-preloader" class="js-preloader">
-      <div class="preloader-inner">
+    <script>
+        // Отримуємо інформацію про лайкнуті товари з local storage
+        var likedItems = JSON.parse(localStorage.getItem('likedItems')) || {};
+    </script>
+
+</head>
+
+<body>
+
+<!-- ***** Preloader Start ***** -->
+<div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
         <span class="dot"></span>
         <div class="dots">
-          <span></span>
-          <span></span>
-          <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-      </div>
     </div>
-    <!-- ***** Preloader End ***** -->
-    
-    
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">Сайт <em> Фітотерапії</em></a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li><a href="index.html">Головна</a></li>
-                            <li><a href="menu.html" class="active">Трави</a></li>
+</div>
+<!-- ***** Preloader End ***** -->
 
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Більше</a>
-                              
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="about.html">Про нас</a>
-                                    <a class="dropdown-item" href="testimonials.html">Відгуки</a>
-                                </div>
-                            </li>
-                            <li><a href="contact.html">Контакти</a></li> 
-                        </ul>        
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
+
+<!-- ***** Header Area Start ***** -->
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">Сайт <em> Фітотерапії</em></a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="index.html" >Головна</a></li>
+                        <!--  <li><a href="book-table.html">Записатись на прийом</a></li>    -->
+                        <li class="dropdown header-filter">
+                            <a class="dropdown-toggle active" href="menu.html">Трави</a>
+                            <div class="dropdown-menu filtered-menu" id="filterMenu"> <!-- Додали id -->
+                                <a class="dropdown-item" href="menu.html">Набори</a>
+                                <a class="dropdown-item" href="menu2.html">Чаї</a>
+                                <a class="dropdown-item" href="menu3.html">Мазі</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">Контакти</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle reworkThis" href="#" role="button" aria-haspopup="true" aria-expanded="false">Більше</a>
+                            <div class="dropdown-menu reworkedMenu" id="moreMenu"> <!-- Додали id -->
+                                <a class="dropdown-item" href="about.html">Про нас</a>
+                                <!--    <a class="dropdown-item" href="blog.html">Наш Блог</a>  -->
+                                <a class="dropdown-item" href="testimonials.html">Відгуки</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ***** Header Area End ***** -->
+
+<!-- ***** Call to Action Start ***** -->
+<section class="section section-bg" id="call-to-action" style="background-image: url(assets/images/DCIM_3.jpg)">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="cta-content">
+                    <br>
+                    <br>
+                    <h2>Набори<em> трав</em></h2>
+                    <p>Цілібні трави є природними дарунками природи і мають давню історію використання в народній медицині та традиційних системах лікування. Ось деякі з їх корисних властивостей: заспокійливі властивості, протизапальні властивості, підтримка імунної системи, підтримка шкіри, допомога при переварюванні, промоція сну, підтримка кровообігу, антиоксидантна дія.</p>
                 </div>
             </div>
         </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
+     </div>
 
-    <!-- ***** Call to Action Start ***** -->
-    <section class="section section-bg" id="call-to-action" style="background-image: url(assets/images/DCIM_3.jpg)">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="cta-content">
-                        <br>
-                        <br>
-                        <h2>Все <em>Меню</em></h2>
-                        <p>,,,,,</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
     <!-- ***** Call to Action End ***** -->
 
@@ -100,6 +114,7 @@
                             <img src="assets/images/trava/travabolezn.png" alt="">
                         </div>
                         <div class="down-content">
+
                             <span>
                                  <sup>грн</sup>520.99
                             </span>
@@ -108,59 +123,82 @@
 
                             <p>Збір трав Очищувальний, 500 гр (ваговий). Збір чинить загальну очищувальну та загальнозміцнювальну дію на органи та системи організму</p>
 
-                            <ul class="social-icons">
-                                <li><a href="#">Замовити</a></li>
-                            </ul>
-                        </div>
+                        <ul class="social-icons">
+                            <li><a href="contact.html">Замовити</a></li>
+                            <li><a href="javascript:void(0);" class="like-icon"><i class="far fa-heart"></i><i class="fas fa-heart"></i></a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="trainer-item">
-                        <div class="image-thumb">
-                            <img src="assets/images/trava/travaclear.jpg" alt="">
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="trainer-item" data-item="unique_id_1">
+                    <div class="image-thumb">
+                        <img src="assets/images/trava/travaclear.jpg" alt="">
+                        <div class="like-icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-heart"></i>
+
                         </div>
-                        <div class="down-content">
+                    </div>
+                    <div class="down-content">
                             <span>
                                  <sup>грн</sup>360.50
                             </span>
+
+                        <h4>щось ще</h4>
+
+                        <p>...............</p>
 
                             <h4>Збір трав при нежиті, гаймориті, аденоїдах </h4>
 
                             <p>Всі компоненти активно доповнюють один одного, і змішані в такій пропорції, щоб найбільш позитивно впливати на організм. </p>
 
-                            <ul class="social-icons">
-                                <li><a href="#">Замовити</a></li>
-                            </ul>
-                        </div>
+                        <ul class="social-icons">
+                            <li><a href="contact.html">Замовити</a></li>
+                            <li><a href="javascript:void(0);" class="like-icon"><i class="far fa-heart"></i><i class="fas fa-heart"></i></a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="trainer-item">
-                        <div class="image-thumb">
-                            <img src="assets/images/trava/travadiabet.png" alt="">
+</div> 
+            <div class="col-lg-4">
+                <div class="trainer-item">
+                    <div class="image-thumb">
+                         <img src="assets/images/trava/travadiabet.png" alt="">
+                        <div class="like-icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-heart"></i>
                         </div>
-                        <div class="down-content">
+                    </div>
+                    <div class="down-content">
                             <span>
                                  <sup>грн</sup>299.00
                             </span>
+
 
                             <h4>Збір трав Діабетичний </h4>
 
                             <p>Вирівнює роботу підшлункової залози та покращує обмінні процеси в організмі </p>
 
-                            <ul class="social-icons">
-                                <li><a href="#">Замовити</a></li>
-                            </ul>
-                        </div>
+                        <ul class="social-icons">
+                            <li><a href="contact.html">Замовити</a></li>
+                            <li><a href="javascript:void(0);" class="like-icon"><i class="far fa-heart"></i><i class="fas fa-heart"></i></a></li>
+                        </ul>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-lg-4">
-                    <div class="trainer-item">
-                        <div class="image-thumb">
-                            <img src="assets/images/trava/travadlasustav.png" alt="">
+
+            <div class="col-lg-4">
+                <div class="trainer-item">
+                    <div class="image-thumb">
+                        <img src="assets/images/trava/travadlasustav.png" alt="">
+                        <div class="like-icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-heart"></i>
                         </div>
-                        <div class="down-content">
+                    </div>
+                    <div class="down-content">
                             <span>
                                  <sup>грн</sup>268.00
                             </span>
@@ -169,18 +207,24 @@
 
                             <p>Профілактика і лікування захворювань кісток і суглобів, а також у разі остеохондрозу</p>
 
-                            <ul class="social-icons">
-                                <li><a href="#">Замовити</a></li>
-                            </ul>
-                        </div>
+                        <ul class="social-icons">
+                            <li><a href="contact.html">Замовити</a></li>
+                            <li><a href="javascript:void(0);" class="like-icon"><i class="far fa-heart"></i><i class="fas fa-heart"></i></a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="trainer-item">
-                        <div class="image-thumb">
-                            <img src="assets/images/trava/travanonikit.png" alt="">
+            </div>
+           
+            <div class="col-lg-4">
+                <div class="trainer-item">
+                    <div class="image-thumb">
+                        <img src="assets/images/trava/travanonikit.png" alt="">
+                        <div class="like-icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-heart"></i>
                         </div>
-                        <div class="down-content">
+                    </div>
+                    <div class="down-content">
                             <span>
                                  <sup>грн</sup>560.00
                             </span>
@@ -189,16 +233,21 @@
 
                             <p>Коли організм ослаблений, достатньо лише трохи переохолодитися і починає дерти в горлі, настає втома й озноб </p>
 
-                            <ul class="social-icons">
-                                <li><a href="#">Замовити</a></li>
-                            </ul>
-                        </div>
+                        <ul class="social-icons">
+                            <li><a href="contact.html">Замовити</a></li>
+                            <li><a href="javascript:void(0);" class="like-icon"><i class="far fa-heart"></i><i class="fas fa-heart"></i></a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="trainer-item">
-                        <div class="image-thumb">
-                            <img src="assets/images/trava/travaonko.png" alt="">
+            </div>
+            <div class="col-lg-4">
+                <div class="trainer-item">
+                    <div class="image-thumb">
+                        <img src="assets/images/trava/travaonko.png" alt="">
+                        <div class="like-icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-heart"></i>
+                
                         </div>
                         <div class="down-content">
                             <span>
@@ -212,75 +261,80 @@
                             <ul class="social-icons">
                                 <li><a href="#">Замовити</a></li>
                             </ul>
-                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-<!---->
-            
+    <!-- Менюшка для відображення лайкнутих товарів -->
+    <div class="right-menu liked-items-wrapper">
+        <h3>Вподобані товари:</h3>
+        <ul id="liked-items-list">
+            <!-- Сюди будуть додаватись лайкнуті товари -->
+        </ul>
+    </div>
 
+    <br>
 
-
-<!---->
-
-            <br>
-                
-            <nav>
-              <ul class="pagination pagination-lg justify-content-center">
+        <nav>
+            <ul class="pagination pagination-lg justify-content-center">
                 <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                    <span class="sr-only">Назад</span>
-                  </a>
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Назад</span>
+                    </a>
                 </li>
                 <li class="page-item"><a class="page-link" href="menu.html">1</a></li>
                 <li class="page-item"><a class="page-link" href="menu2.html">2</a></li>
                 <li class="page-item"><a class="page-link" href="menu3.html">3</a></li>
                 <li class="page-item">
-                  <a class="page-link" href="menu2.html" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                    <span class="sr-only">Далі</span>
-                  </a>
+                    <a class="page-link" href="menu2.html" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Далі</span>
+                    </a>
                 </li>
-              </ul>
-            </nav>
+            </ul>
+        </nav>
 
-        </div>
-    </section>
-    <!-- ***** Fleet Ends ***** -->
+    </div>
+</section>
+<!-- ***** Fleet Ends ***** -->
 
-    
-    <!-- ***** Footer Start ***** -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>
-                        © 2023 Grand
-                    </p>
-                </div>
+
+<!-- ***** Footer Start ***** -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p>
+                    © 2023 Grand
+                </p>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
+<!-- jQuery -->
+<script src="assets/js/jquery-2.1.0.min.js"></script>
 
-    <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+<!-- Bootstrap -->
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 
-    <!-- Plugins -->
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script> 
-    <script src="assets/js/mixitup.js"></script> 
-    <script src="assets/js/accordions.js"></script>
-    
-    <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
+<!-- Plugins -->
+<script src="assets/js/scrollreveal.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/imgfix.min.js"></script>
+<script src="assets/js/mixitup.js"></script>
+<script src="assets/js/accordions.js"></script>
 
-  </body>
+<!-- Global Init -->
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/filter.js"></script>
+<script src="assets/js/like.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
 </html>

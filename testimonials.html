@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,43 +17,54 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 
-    </head>
-    
-    <body>
-    
-    <!-- ***** Preloader Start ***** -->
-    <div id="js-preloader" class="js-preloader">
-      <div class="preloader-inner">
+</head>
+
+<body>
+
+<!-- ***** Preloader Start ***** -->
+<div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
         <span class="dot"></span>
         <div class="dots">
-          <span></span>
-          <span></span>
-          <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-      </div>
     </div>
-    <!-- ***** Preloader End ***** -->
-    
-    
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">Сайт <em> Фітотерапії</em></a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li><a href="index.html">Головна</a></li>
-                            <li><a href="menu.html">Трави</a></li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Більше</a>
-                              
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item"  href="about.html">Про нас</a>
-                                    <a class="dropdown-item active" href="testimonials.html">Відгуки</a>
+</div>
+
+<!-- ***** Preloader End ***** -->
+
+
+<!-- ***** Header Area Start ***** -->
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">Сайт <em> Фітотерапії</em></a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="index.html">Головна</a></li>
+                        <!--  <li><a href="book-table.html">Записатись на прийом</a></li>    -->
+                        <li class="dropdown header-filter">
+                            <a class="dropdown-toggle" href="menu.html">Трави</a>
+                            <div class="dropdown-menu filtered-menu" id="filterMenu"> <!-- Додали id -->
+                                <a class="dropdown-item" href="menu.html">Набори</a>
+                                <a class="dropdown-item" href="menu2.html">Чаї</a>
+                                <a class="dropdown-item" href="menu3.html">Мазі</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">Контакти</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle reworkThis active" href="#" role="button" aria-haspopup="true" aria-expanded="false">Більше</a>
+                            <div class="dropdown-menu reworkedMenu" id="moreMenu"> <!-- Додали id -->
+                                <a class="dropdown-item" href="about.html">Про нас</a>
+                                <!--    <a class="dropdown-item" href="blog.html">Наш Блог</a>  -->
+                                <a class="dropdown-item" href="testimonials.html">Відгуки</a>
+  
                                 </div>
                             </li>
                             <li><a href="contact.html">Контакти</a></li> 
@@ -185,46 +196,46 @@
                             <div class="right-content">
                                 <h4>Іван</h4>
                                 <p><em>"Дякую за оперативну доставку! Мої трав'яні замовлення завжди приходять учасно та у доброму стані."</em></p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
-    <!-- ***** Testimonials Item End ***** -->
+    </div>
+</section>
+<!-- ***** Testimonials Item End ***** -->
 
-    <!-- ***** Footer Start ***** -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>
-                        Copyright © 2023 Grand
+<!-- ***** Footer Start ***** -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p>
+                    Copyright © 2023 Grand
 
-                    </p>
-                </div>
+                </p>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
+<!-- jQuery -->
+<script src="assets/js/jquery-2.1.0.min.js"></script>
 
-    <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+<!-- Bootstrap -->
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 
-    <!-- Plugins -->
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script> 
-    <script src="assets/js/mixitup.js"></script> 
-    <script src="assets/js/accordions.js"></script>
-    
-    <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
+<!-- Plugins -->
+<script src="assets/js/scrollreveal.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/imgfix.min.js"></script>
+<script src="assets/js/mixitup.js"></script>
+<script src="assets/js/accordions.js"></script>
 
-  </body>
+<!-- Global Init -->
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/filter.js"></script>
+</body>
 </html>

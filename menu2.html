@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,89 +16,101 @@
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="assets/js/filter.js"></script>
 
-    </head>
-    
-    <body>
-    
-    <!-- ***** Preloader Start ***** -->
-    <div id="js-preloader" class="js-preloader">
-      <div class="preloader-inner">
+</head>
+
+<body>
+
+<!-- ***** Preloader Start ***** -->
+<div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
         <span class="dot"></span>
         <div class="dots">
-          <span></span>
-          <span></span>
-          <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-      </div>
     </div>
-    <!-- ***** Preloader End ***** -->
-    
-    
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">Сайт <em> Фітотерапії</em></a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li><a href="index.html">Головна</a></li>
-                            <li><a href="menu.html" class="active">Трави</a></li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Більше</a>
-                              
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="about.html">Про нас</a>
-                                    <a class="dropdown-item" href="testimonials.html">Відгуки</a>
-                                </div>
-                            </li>
-                            <li><a href="contact.html">Контакти</a></li> 
-                        </ul>        
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
+</div>
+
+<!-- ***** Preloader End ***** -->
+
+
+<!-- ***** Header Area Start ***** -->
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">Сайт <em> Фітотерапії</em></a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="index.html">Головна</a></li>
+                        <!--  <li><a href="book-table.html">Записатись на прийом</a></li>    -->
+                        <li class="dropdown header-filter">
+                            <a class="dropdown-toggle active" href="menu.html">Трави</a>
+                            <div class="dropdown-menu filtered-menu" id="filterMenu"> <!-- Додали id -->
+                                <a class="dropdown-item" href="menu.html">Набори</a>
+                                <a class="dropdown-item" href="menu2.html">Чаї</a>
+                                <a class="dropdown-item" href="menu3.html">Мазі</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">Контакти</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle reworkThis" href="#" role="button" aria-haspopup="true" aria-expanded="false">Більше</a>
+                            <div class="dropdown-menu reworkedMenu" id="moreMenu"> <!-- Додали id -->
+                                <a class="dropdown-item" href="about.html">Про нас</a>
+                                <!--    <a class="dropdown-item" href="blog.html">Наш Блог</a>  -->
+                                <a class="dropdown-item" href="testimonials.html">Відгуки</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ***** Header Area End ***** -->
+
+<!-- ***** Call to Action Start ***** -->
+<section class="section section-bg" id="call-to-action" style="background-image: url(assets/images/1.jpg)">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="cta-content">
+                    <br>
+                    <br>
+                    <h2><em>Чаї</em></h2>
+                    <p>Цілібні чаї, приготовані з різноманітних трав та рослин, можуть мати безліч корисних властивостей для здоров'я. Ось деякі з них: заспокійливі та релаксуючі властивості, підтримка переварювання, допомога імунній системі, антиоксидантна дія, протизапальні властивості, підтримка шкіри, заспокоєння дихальної системи, підтримка кровообігу.</p>
                 </div>
             </div>
         </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
+</div>
+    
+</section>
+<!-- ***** Call to Action End ***** -->
 
-    <!-- ***** Call to Action Start ***** -->
-    <section class="section section-bg" id="call-to-action" style="background-image: url(assets/images/1.jpg)">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="cta-content">
-                        <br>
-                        <br>
-                        <h2>Все <em>Меню</em></h2>
-                        <p>,,,,,</p>
+<!-- ***** Fleet Starts ***** -->
+<section class="section" id="trainers">
+    <div class="container">
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="trainer-item">
+                    <div class="image-thumb">
+                        <img src="assets/images/chai/chervoni.png" alt="">
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Call to Action End ***** -->
-
-    <!-- ***** Fleet Starts ***** -->
-    <section class="section" id="trainers">
-        <div class="container">
-            <br>
-            <br>
-
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="trainer-item">
-                        <div class="image-thumb">
-                            <img src="assets/images/chai/chervoni.png" alt="">
-                        </div>
-                        <div class="down-content">
+                    <div class="down-content">
                             <span>
                                  <sup>грн</sup>120.00
                             </span>
@@ -107,18 +119,20 @@
 
                             <p>Червона Пагода – елітний червоний китайський чай, який культивується на батьківщині більшості високоякісного чаю – провінції Юннань, регіон Сішуаньбаньна.</p>
 
-                            <ul class="social-icons">
-                                <li><a href="#">Замовити</a></li>
-                            </ul>
-                        </div>
+                        <ul class="social-icons">
+                            <li><a href="contact.html">Замовити</a></li>
+                            <li><a href="javascript:void(0);" class="like-icon"><i class="far fa-heart"></i><i class="fas fa-heart"></i></a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="trainer-item">
-                        <div class="image-thumb">
-                            <img src="assets/images/chai/gracaniy.png" alt="">
-                        </div>
-                        <div class="down-content">
+            </div>
+            <div class="col-lg-4">
+                <div class="trainer-item">
+                    <div class="image-thumb">
+                        <img src="assets/images/chai/gracaniy.png" alt="">
+                    </div>
+                    <div class="down-content">
+
                             <span>
                                  <sup>грн</sup>199.99
                             </span>
@@ -127,73 +141,79 @@
 
                             <p>Незважаючи на свою назву – гречаний чай – цей напій має мало спільного зі звичною нам гречаною кашею.</p>
 
-                            <ul class="social-icons">
-                                <li><a href="#">Замовити</a></li>
-                            </ul>
-                        </div>
+                        <ul class="social-icons">
+                            <li><a href="contact.html">Замовити</a></li>
+                            <li><a href="javascript:void(0);" class="like-icon"><i class="far fa-heart"></i><i class="fas fa-heart"></i></a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="trainer-item">
-                        <div class="image-thumb">
-                            <img src="assets/images/chai/kvitkivi.png" alt="">
-                        </div>
-                        <div class="down-content">
+</div>
+            
+            <div class="col-lg-4">
+                <div class="trainer-item">
+                    <div class="image-thumb">
+                        <img src="assets/images/chai/kvitkivi.png" alt="">
+                    </div>
+                    <div class="down-content">
+
                             <span>
                                  <sup>грн</sup>75.00
                             </span>
+
 
                             <h4>Квітковий чай Анчан Синій чай</h4>
 
                             <p>Унікальний фіточай з пелюсток рослини Кліторія Трійчаста дає дуже незвичний колір напою – лазурний. </p>
 
-                            <ul class="social-icons">
-                                <li><a href="#">Замовити</a></li>
-                            </ul>
-                        </div>
+                        <ul class="social-icons">
+                            <li><a href="contact.html">Замовити</a></li>
+                            <li><a href="javascript:void(0);" class="like-icon"><i class="far fa-heart"></i><i class="fas fa-heart"></i></a></li>
+                        </ul>
                     </div>
                 </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="trainer-item">
+                    <div class="image-thumb">
+                        <img src="assets/images/chai/kvitkovikitai.png" alt="">
+                    </div>
+                    <div class="down-content">
 
-                <div class="col-lg-4">
-                    <div class="trainer-item">
-                        <div class="image-thumb">
-                            <img src="assets/images/chai/kvitkovikitai.png" alt="">
-                        </div>
-                        <div class="down-content">
                             <span>
                                  <sup>грн</sup>66.99
                             </span>
-
                             <h4>Квітковий чай Чайна троянда</h4>
 
                             <p>Чайна троянда, вирощена у китайській провінції Аньхой, дивує яскравим ароматом та безперечною екологічною чистотою, бо рослини не оброблюють ніякими хімічними препаратами, а регіон вирощування максимально віддалено від промислових виробництв та житла.</p>
 
-                            <ul class="social-icons">
-                                <li><a href="#">Замовити</a></li>
-                            </ul>
-                        </div>
+                        <ul class="social-icons">
+                            <li><a href="contact.html">Замовити</a></li>
+                            <li><a href="javascript:void(0);" class="like-icon"><i class="far fa-heart"></i><i class="fas fa-heart"></i></a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="trainer-item">
-                        <div class="image-thumb">
-                            <img src="assets/images/chai/podaroknabor.png" alt="">
-                        </div>
-                        <div class="down-content">
+            </div>
+            <div class="col-lg-4">
+                <div class="trainer-item">
+                    <div class="image-thumb">
+                        <img src="assets/images/chai/podaroknabor.png" alt="">
+                    </div>
+                    <div class="down-content">
                             <span>
                                  <sup>грн</sup>300.00
                             </span>
-
                             <h4>Подарунковий набір Вязаного чаю Малиновий 16 шт</h4>
 
                             <p>В цій ошатній коробці шанувальників екзотичного китайського чаю чекають справжні шедеври майстрів чайної справи. </p>
 
-                            <ul class="social-icons">
-                                <li><a href="#">Замовити</a></li>
-                            </ul>
-                        </div>
+                        <ul class="social-icons">
+                            <li><a href="contact.html">Замовити</a></li>
+                            <li><a href="javascript:void(0);" class="like-icon"><i class="far fa-heart"></i><i class="fas fa-heart"></i></a></li>
+                        </ul>
                     </div>
                 </div>
+ </div>
+
                 <div class="col-lg-4">
                     <div class="trainer-item">
                         <div class="image-thumb">
@@ -208,71 +228,81 @@
 
                             <p>Колодязь дракону (Лунцзін) – зелений чай найвищої якості, відомий з давніх пір. Його ім’я оточене легендами, в яких фігурують могутні дракони, що здатні викликати дощ.</p>
 
-                            <ul class="social-icons">
-                                <li><a href="#">Замовити</a></li>
-                            </ul>
-                        </div>
+                        <ul class="social-icons">
+                            <li><a href="contact.html">Замовити</a></li>
+                            <li><a href="javascript:void(0);" class="like-icon"><i class="far fa-heart"></i><i class="fas fa-heart"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <br>
-                
-            <nav>
-              <ul class="pagination pagination-lg justify-content-center">
+        <div class="right-menu liked-items-wrapper">
+            <h3>Вподобані товари:</h3>
+            <ul id="liked-items-list">
+                <!-- Сюди будуть додаватись лайкнуті товари -->
+            </ul>
+        </div>
+
+        <br>
+
+        <nav>
+            <ul class="pagination pagination-lg justify-content-center">
                 <li class="page-item">
-                  <a class="page-link" href="menu.html" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                    <span class="sr-only">Назад</span>
-                  </a>
+                    <a class="page-link" href="menu.html" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Назад</span>
+                    </a>
                 </li>
                 <li class="page-item"><a class="page-link" href="menu.html">1</a></li>
                 <li class="page-item"><a class="page-link" href="menu2.html">2</a></li>
                 <li class="page-item"><a class="page-link" href="menu3.html">3</a></li>
                 <li class="page-item">
-                  <a class="page-link" href="menu3.html" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                    <span class="sr-only">Далі</span>
-                  </a>
+                    <a class="page-link" href="menu3.html" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Далі</span>
+                    </a>
                 </li>
-              </ul>
-            </nav>
+            </ul>
+        </nav>
 
-        </div>
-    </section>
-    <!-- ***** Fleet Ends ***** -->
+    </div>
+</section>
+<!-- ***** Fleet Ends ***** -->
 
-    
-    <!-- ***** Footer Start ***** -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>
-                        © 2023 Grand
-                    </p>
-                </div>
+
+<!-- ***** Footer Start ***** -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p>
+                    © 2023 Grand
+                </p>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
+<!-- jQuery -->
+<script src="assets/js/jquery-2.1.0.min.js"></script>
 
-    <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+<!-- Bootstrap -->
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 
-    <!-- Plugins -->
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script> 
-    <script src="assets/js/mixitup.js"></script> 
-    <script src="assets/js/accordions.js"></script>
-    
-    <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
+<!-- Plugins -->
+<script src="assets/js/scrollreveal.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/imgfix.min.js"></script>
+<script src="assets/js/mixitup.js"></script>
+<script src="assets/js/accordions.js"></script>
 
-  </body>
+<!-- Global Init -->
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/filter.js"></script>
+<script src="assets/js/like.js"></script>
+
+</body>
 </html>

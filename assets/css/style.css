@@ -74,10 +74,10 @@ p {
   color: #7a7a7a;
 }
 
-/* 
+/*
 ---------------------------------------------
 global styles
---------------------------------------------- 
+---------------------------------------------
 */
 html,
 body {
@@ -162,10 +162,10 @@ body {
 }
 
 
-/* 
+/*
 ---------------------------------------------
 header
---------------------------------------------- 
+---------------------------------------------
 */
 
 .background-header {
@@ -521,10 +521,10 @@ header
 }
 
 
-/* 
+/*
 ---------------------------------------------
 banner
---------------------------------------------- 
+---------------------------------------------
 */
 
 .main-banner {
@@ -764,10 +764,10 @@ Our Classes
 }
 
 
-/* 
+/*
 ---------------------------------------------
 schedule
---------------------------------------------- 
+---------------------------------------------
 */
 
 .section-bg {
@@ -804,7 +804,7 @@ schedule
 }
 
 #schedule table tbody {
-  border-top: 1px solid #fff; 
+  border-top: 1px solid #fff;
 }
 
 #schedule table tbody tr {
@@ -887,14 +887,14 @@ schedule
 }
 
 
-/* 
+/*
 ---------------------------------------------
 trainers
---------------------------------------------- 
+---------------------------------------------
 */
 
-#trainers { 
-  padding-bottom: 90px; 
+#trainers {
+  padding-bottom: 90px;
 }
 
 #trainers .trainer-item {
@@ -950,10 +950,10 @@ ul.social-icons li a:hover {
 }
 
 
-/* 
+/*
 ---------------------------------------------
 contact
---------------------------------------------- 
+---------------------------------------------
 */
 
 #contact-us {
@@ -1035,10 +1035,10 @@ contact
 
 
 
-/* 
+/*
 ---------------------------------------------
 footer
---------------------------------------------- 
+---------------------------------------------
 */
 footer {
   text-align: center;
@@ -1061,10 +1061,10 @@ footer p a:hover {
 
 
 
-/* 
+/*
 ---------------------------------------------
 preloader
---------------------------------------------- 
+---------------------------------------------
 */
 
 .js-preloader {
@@ -1162,10 +1162,10 @@ preloader
 }
 
 
-/* 
+/*
 ---------------------------------------------
 responsive
---------------------------------------------- 
+---------------------------------------------
 */
 
 
@@ -1238,8 +1238,8 @@ responsive
   background-color: #ed563b;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active, 
-.btn-primary:not(:disabled):not(.disabled):active, 
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle,
 .btn-primary:active,
 .btn-primary:active:focus,
@@ -1272,6 +1272,107 @@ a:hover {
   color: #f9735b;
 }
 
+/* Стилі для іконки лайка */
+.like-icon {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Стилі для заповненої версії лайка */
+.like-icon .fas.fa-heart {
+  display: none; /* Приховуємо заповнений лайк за замовчуванням */
+}
+
+.like-icon.liked .fas.fa-heart {
+  display: block; /* Відображаємо заповнений лайк при кліку */
+  color: #ed563b;
+}
+
+.like-icon.liked .far.fa-heart {
+  display: none; /* Приховуємо контур лайка при заповненому лайку */
+}
+
+/* Загальні стилі для правого меню */
+.right-menu {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 200px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.right-menu.show {
+  display: block;
+}
+
+/* Стилі для заголовка меню */
+.right-menu h3 {
+  padding: 15px;
+  margin: 0;
+  background-color: #ed563b;
+  border-bottom: 1px solid #262016;
+  border-radius: 5px 5px 0 0;
+}
+
+/* Стилі для списку лайкнутих товарів */
+#liked-items-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#liked-items-list li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #262016;
+  font-size: 14px;
+}
+
+#liked-items-list li:last-child {
+  border-bottom: none;
+}
+
+/* Ефект при наведенні на пункт списку */
+#liked-items-list li:hover {
+  background-color: #a1722b;
+  cursor: pointer;
+}
+
+/* Стилі для закріплення посилання */
+.col-lg-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  list-style: none;
+  margin-left: 10px;
+}
+
+.social-icons li a {
+  display: block;
+  text-decoration: none;
+  color: #ed563b;
+}
+
 .down-content {
   min-height: 365px;
  }
+
