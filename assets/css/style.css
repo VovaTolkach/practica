@@ -1271,3 +1271,7 @@ a:focus,
 a:hover {
   color: #f9735b;
 }
+
+.down-content {
+  min-height: 365px;
+ }
